@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="materialize/css/font/material-icons.css">
+    <style>
+        header{
+            background: url(img/pixabay.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+        }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vm;
+        }
+        .tabs .indicator{
+            background-color: blueviolet;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: width 670px) {
+           header{
+              min-height: 500px; 
+           } 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo">NELIDA</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="white-text center">Welcome to Nelida</h2>
+    </header>
+
+    <!-- Services -->
+    <div class="container">
+        <h2 class="pink-text darken-4 center">Our Services</h2>
+
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <video class="responsive-video" controls><source src="video.mp4" type="video/mp4"></video>
+                        <a href="#" class="btn-floating pink pulse right"><i class="material-icons">favorite</i></a> 
+                    <div class="card-content">
+                        <span class="card-title">Counselling</span>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">View More</a>
+                        <a href="#">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <video class="responsive-video" controls><source src="video.mp4" type="video/mp4"></video>
+                        <a href="#" class="btn-floating pink pulse right"><i class="material-icons">favorite</i></a> 
+                    <div class="card-content">
+                        <span class="card-title">Counselling</span>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">View More</a>
+                        <a href="#">More Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <video class="responsive-video" controls><source src="video.mp4" type="video/mp4"></video>
+                        <a href="#" class="btn-floating pink pulse right"><i class="material-icons">favorite</i></a> 
+                    <div class="card-content">
+                        <span class="card-title">Counselling</span>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">View More</a>
+                        <a href="#">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/leaf.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/hills.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Services/Tabs -->
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <h2 class="pink-text darken-4">What we do</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+            </div>
+            <div class="col s12 m6 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#counselling" class="pink-text darken-4">Counselling</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#mentoring" class="pink-text darken-4">Mentoring</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="counselling">
+                    <p class="flow-text pink-text darken-4">COUNSELLING</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                </div>
+                <div class="col s12" id="mentoring">
+                    <p class="flow-text ipink-text darken-4">MENTORING</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <h2 class="pink-text darken-4 center">Our Team</h2>
+    <div class="row"></div>
+    
+    <div class="container">
+        <div class="row">
+        <div class="col s12 m6 l6">
+            <blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
+            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
+            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</blockquote>
+            <a class="btn pink darken-4" type="submit" class="waves-effect light-effect pink darken-4">Read more</a>
+        </div>
+            
+        <div class="col s12 m6 l6"><img src="img/woman.jpg" alt="" class="responsive-img"></div> 
+        </div>       
+    </div>
+
+    <!-- contact form -->
+    <section class="section container" id="contact">
+        <div class="row">
+            <div class="col s12 m5 l5">
+                <h2 class="pink-text darken-4">Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
+                    sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
+                    ea rebum.</p>
+            </div>
+            <div class="col s12 m5 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <!-- <i class="material-icons prefix">email</i> -->
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date you need me for...</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox"><span>Counselling</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox"><span>Mentorship</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox"><span>Coaching</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field">
+                        <button class="btn pink darken-4">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer> -->
+        <footer class="page-footer pink darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <h5>About Me</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col s12 l4 offset-l2">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                            <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright"></div>
+    <div class="container">
+    <p class="center">Designed by Dara for <a href="https://pearlsafrica.org">Pearls Africa</a></p>
+    </div>
+        </footer>
+  
+    
+<script src="materialize/js/jquery.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".sidenav").sidenav();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
+        $(".datepicker") .datepicker({
+
+        });
+    });
+</script>  
+</body>
+</html>
